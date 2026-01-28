@@ -8,8 +8,8 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "yCENzh's Blog",
-	subtitle: "爱你所爱~",
+	title: "nuwura's blog",
+	subtitle: "曾经沧海难为水，除却巫山不是云。",
 	themeColor: {
 		hue: 275, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
 		fixed: false, // Hide the theme color picker for visitors
@@ -50,25 +50,25 @@ export const navBarConfig: NavBarConfig = {
 			url: "https://github.com/yCENzh", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},*/
-		{
+		/*{
 			name: "Travelling",
 			url: "https://www.travellings.cn/train.html",
 			external: true,
-		},
+		},*/
 	],
 };
 
 export const profileConfig: ProfileConfig = {
 	avatar: "/avatar.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/' 原assets/images/demo-avatar.png,可选https://q2.qlogo.cn/headimg_dl?dst_uin=189563385&spec=0
-	name: "yCENzh",
-	bio: "Protect What You Love./爱你所爱！",
+	name: "nuwura",
+	bio: "曾经沧海难为水,除却巫山不是云。",
 	links: [
-		/*{
+		{
 			name: "Twitter",
 			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com",
+			url: "https://twitter.com/tianyz404",
 		},
 		{
 			name: "Steam",
@@ -78,12 +78,12 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/yCENzh",
+			url: "https://github.com/tianyz404",
 		},
 		{
 			name: "Telegram",
 			icon: "fa6-brands:telegram",
-			url: "https://t.me/yCENzh",
+			url: "https://t.me/tenyuri",
 		},/*
 		{
 			name: "开往",
