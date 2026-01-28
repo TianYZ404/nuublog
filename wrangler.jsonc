@@ -1,6 +1,6 @@
 {
-  "name": "fuwari",
-  "compatibility_date": "2025-10-11",
+  "name": "nuwuwa",
+  "compatibility_date": "2026-01-28",
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page"
