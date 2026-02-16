@@ -43,18 +43,14 @@ ssh-add ~/.ssh/id_rsa_github_second
 ```bash
 cat ~/.ssh/id_rsa_github_main.pub
 ```
->公钥的内容为一串长字符串，字符串的末尾为你输入的密钥备注  
+公钥的内容为一串长字符串，字符串的末尾为你输入的密钥备注  
 之后访问 Github 的用户的Settings界面，并来到 SSH and GPG keys 面板  
-
-点击 New SSH key ，之后将前面输出的公钥内容粘贴到 输入框中：
-
+点击 New SSH key ，之后将前面输出的公钥内容粘贴到 输入框中，起名字，直接save完成。
 
 ### 二、 配置 SSH Config 文件
 
 通过修改 `~/.ssh/config` 文件（若不存在则新建），为不同的账号设置“别名（Host）”，这是区分账号的核心。
-
 在文件中输入以下内容：
-
 ```text
 # 账号 A (主账号)
 Host github.com
@@ -71,13 +67,11 @@ Host github_second
     IdentityFile ~/.ssh/id_rsa_github_second
 
 ```
-
 * **注意**：`Host` 后面的名字是自定义的别名，后续克隆和推送代码时会用到。
 
 ### 三、 在不同项目中使用对应的账号
-
-配置好 SSH 后，关键在于如何让 Git 知道某个项目该用哪个账号。
-
+ 
+配置好 SSH 后，关键在于如何让 Git 知道某个项目该用哪个账号。  
 1. **修改远程仓库地址**：
 如果你从小号（账号 B）克隆了一个博客仓库，默认地址是 `git@github.com:user_b/blog.git`。你需要将 `github.com` 修改为你设置的**别名** `github_second`：
 ```bash
@@ -88,20 +82,16 @@ git clone git@github_second:user_b/blog.git
 git remote set-url origin git@github_second:user_b/blog.git
 
 ```
-
-
 2. **单独配置项目用户信息**：
 :::note
 为了保证博客提交记录显示的作者信息正确，不要使用全局配置（`--global`）  
 需要在**对应项目目录**下进行局部配置：
 :::
-
 ```bash
 git config user.name "Your_Name_B"
 git config user.email "email_B@example.com"
 
 ```
-
 
 ### 四、 验证配置
 
