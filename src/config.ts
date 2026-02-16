@@ -8,7 +8,7 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "nuwura's blog",
+	title: "hurura's blog",
 	subtitle: "曾经沧海难为水，除却巫山不是云。",
 	themeColor: {
 		hue: 275, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -60,7 +60,7 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "/avatar.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/' 原assets/images/demo-avatar.png,可选https://q2.qlogo.cn/headimg_dl?dst_uin=189563385&spec=0
-	name: "nuwura",
+	name: "hurura",
 	bio: "曾经沧海难为水,除却巫山不是云。",
 	links: [
 		{
@@ -79,6 +79,11 @@ export const profileConfig: ProfileConfig = {
 			name: "GitHub",
 			icon: "fa6-brands:github",
 			url: "https://github.com/tianyz404",
+		},
+		{
+			name: "E-Mail",
+			icon: "fa6-solid:envelope",
+			url: "mailto:tianyz404@gmail.com",
 		},
 		{
 			name: "Telegram",
