@@ -3,7 +3,7 @@ title: 恭喜主包乔迁新博客（大雾）
 published: 2026-02-16
 description: '详述了新域名nuu.moe的来历，以及表达对新一年的期许'
 image: '/cover3.webp'
-tags: ['域名','','']
+tags: ['域名','新年总结','维护日志']
 category: '维护日志'
 draft: false 
 lang: 'zh_CN'
@@ -23,7 +23,7 @@ lang: 'zh_CN'
 * **读音自带萌属性：** 念出来是 `/nuː/`。听起来很像某种小动物在探头探脑，或者像是在发呆时的拟声词。这种“不明觉厉”但又很可爱的发音，也完美契合 `.moe` 的后缀。
 * **极简主义：** 在这个追求大而全的时代，三个字母代表了一种克制。她不定义内容，只作为一个容器。
 > [!TIP]
-> *"The less is more." --—— Mies (Ludwig Mies van der Rohe)*
+> *"The less is more." --—— Mies (Ludwig Mies van der Rohe)*  
 > Less length, More moe.()
 
 ### 新家的定位：不仅仅是 Repository
@@ -50,5 +50,5 @@ lang: 'zh_CN'
 愿各位新的一年：追的番不烂尾，买的胶不断件，推的推子不塌房，代码编译必过，服务器 uptime 破表，Bug 数量收敛于零。
 主包在 nuu.moe 祝大家：欧气爆棚，诸事顺遂！
 
-2026/02/16 21:43 BJT
+2026/02/16 21\:43 BJT  
 Hurura(xiaoming)
