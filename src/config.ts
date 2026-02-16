@@ -81,11 +81,6 @@ export const profileConfig: ProfileConfig = {
 			url: "https://github.com/tianyz404",
 		},
 		{
-			name: "E-Mail",
-			icon: "fa6-solid:envelope",
-			url: "mailto:tianyz404@gmail.com",
-		},
-		{
 			name: "Telegram",
 			icon: "fa6-brands:telegram",
 			url: "https://t.me/tenyuri",
@@ -95,6 +90,11 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-solid:train-subway",
 			url: "https://www.travellings.cn/train.html",
 		},*/
+		{
+			name: "E-Mail",
+			icon: "fa6-solid:envelope",
+			url: "mailto:tianyz404@gmail.com",
+		},
 	],
 };
 
