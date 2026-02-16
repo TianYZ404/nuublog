@@ -2,7 +2,7 @@
 title: 恭喜主包乔迁新博客（大雾）
 published: 2026-02-16
 description: '详述了新域名nuu.moe的来历，以及表达对新一年的期许'
-image: './cover3.webp'
+image: '/cover3.webp'
 tags: ['域名','','']
 category: '维护日志'
 draft: false 
