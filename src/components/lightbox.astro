@@ -57,8 +57,14 @@ document.addEventListener('astro:page-load', () => {
 });
 
 // 监听 Astro 页面切换前事件
-document.addEventListener('astro:before-swap', () => {
-    // 销毁旧的实例
-    Fancybox.unbind(".custom-md img, #post-cover img");
+//document.addEventListener('astro:before-swap', () => {
+//    // 销毁旧的实例
+//  Fancybox.unbind(".custom-md img, #post-cover img");
+//});
+
+window.swup.hooks.on('visit:start', () => {
+  window.Fancybox?.unbind?.(".custom-md img, #post-cover img");
 });
+
+
 </script>

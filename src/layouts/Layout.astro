@@ -473,6 +473,11 @@ function setupSwupHooks() {
  * 设置所有一次性的事件监听器和钩子
  */
 function initializeSite() {
+
+	if (window.__SITE_INITIALIZED__) return;
+	window.__SITE_INITIALIZED__ = true;
+
+
 	// 加载主题和颜色配置
 	loadTheme();
 	loadHue();
@@ -502,8 +507,18 @@ function initializeSite() {
 }
 
 // 启动逻辑：等待 swup 可用后，初始化所有功能
+//if (window.swup) {
+//	initializeSite();
+//} else {
+//	document.addEventListener('swup:enable', initializeSite);
+//}
+
 if (window.swup) {
 	initializeSite();
 } else {
-	document.addEventListener('swup:enable', initializeSite);
+	document.addEventListener('swup:enable', () => {
+		if (!window.__SITE_INITIALIZED__) {
+			initializeSite();
+		}
+	}, { once: true });
 }
