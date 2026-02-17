@@ -69,8 +69,8 @@ export const profileConfig: ProfileConfig = {
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://twitter.com/tianyz404",
-		},/*
-		{
+		},
+		/*{
 			name: "Steam",
 			icon: "fa6-brands:steam",
 			url: "https://store.steampowered.com",
@@ -94,7 +94,7 @@ export const profileConfig: ProfileConfig = {
 			name: "E-Mail",
 			icon: "fa6-solid:envelope",
 			url: "mailto:tianyz404@gmail.com",
-		},
+		}
 	],
 };
 

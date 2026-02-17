@@ -68,7 +68,7 @@ const bannerOffset =
 	  data-overlayscrollbars-initialize
 >
 	<head>
-
+				
 		<!-- Umami -->
 		<script type="text/partytown" src="https://cloud.umami.is/script.js" data-website-id="81b876fe-52ac-4491-86ab-0cb47e879248"></script>
 		
@@ -139,7 +139,7 @@ const bannerOffset =
 		<slot name="head"></slot>
 
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
-
+		
 		<link rel="preload" as="image" href={profileConfig.avatar} fetchpriority="high" />
 		<link rel="preload" as="image" href={banner} fetchpriority="high" />
 	</head>
@@ -472,11 +472,6 @@ function setupSwupHooks() {
  * 设置所有一次性的事件监听器和钩子
  */
 function initializeSite() {
-
-	if (window.__SITE_INITIALIZED__) return;
-	window.__SITE_INITIALIZED__ = true;
-
-
 	// 加载主题和颜色配置
 	loadTheme();
 	loadHue();
@@ -506,18 +501,8 @@ function initializeSite() {
 }
 
 // 启动逻辑：等待 swup 可用后，初始化所有功能
-//if (window.swup) {
-//	initializeSite();
-//} else {
-//	document.addEventListener('swup:enable', initializeSite);
-//}
-
 if (window.swup) {
 	initializeSite();
 } else {
-	document.addEventListener('swup:enable', () => {
-		if (!window.__SITE_INITIALIZED__) {
-			initializeSite();
-		}
-	}, { once: true });
+	document.addEventListener('swup:enable', initializeSite);
 }
