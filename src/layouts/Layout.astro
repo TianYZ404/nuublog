@@ -68,35 +68,9 @@ const bannerOffset =
 	  data-overlayscrollbars-initialize
 >
 	<head>
-		<!-- Microsoft Clarity -->
-		<script type="text/javascript">
-			(function(c,l,a,r,i,t,y){
-				c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-				t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-				y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-			})(window, document, "clarity", "script", "tajp0d55h4");
-		</script>
-		
-		<!-- Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-D8YKHXY480"></script>
-		<script>
-			// Google Analytics setup
-			// biome-ignore lint/suspicious/noExplicitAny: Google Analytics requires any type
-			const dataLayer: any[] = (window as any).dataLayer || [];
-			(window as any).dataLayer = dataLayer;
-			
-			// biome-ignore lint/suspicious/noExplicitAny: Google Analytics requires any type
-			function gtag(...args: any[]) {
-				(window as any).dataLayer = (window as any).dataLayer || [];
-				(window as any).dataLayer.push(args);
-			}
-			
-			gtag('js', new Date());
-			gtag('config', 'G-D8YKHXY480');
-		</script>
-		
+
 		<!-- Umami -->
-		<script type="text/partytown" src="https://cloud.umami.is/script.js" data-website-id="a1a1f897-326f-4e68-a6f0-54e9dc361522"></script>
+		<script type="text/partytown" src="https://cloud.umami.is/script.js" data-website-id="81b876fe-52ac-4491-86ab-0cb47e879248"></script>
 		
 		<title>{pageTitle}</title>
 
@@ -166,6 +140,8 @@ const bannerOffset =
 
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
 
+		<link rel="preload" as="image" href={profileConfig.avatar} fetchpriority="high" />
+		<link rel="preload" as="image" href={banner} fetchpriority="high" />
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
 		  data-overlayscrollbars-initialize
