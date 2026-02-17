@@ -39,7 +39,7 @@
 
 如果你想找我 debug、交流番剧，或者单纯想测试一下 `nuu.moe` 的邮件转发顺不顺：
 
-* **Email:** `contact@nuu.moe` (推荐用这种极简格式)
+* **Email:** `contact@nuu.moe` 
 * **GitHub:** `@TianYZ`
 * **RSS:** [订阅链接](https://nuu.moe/rss.xml)
 
